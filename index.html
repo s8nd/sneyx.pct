@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="description" content="Sneyx.pct - YoloV8 AI AimAssist">
+    <meta property="og:title" content="Sneyx.pct">
+    <meta property="og:description" content="YoloV8 AI AimAssist">
+    <meta property="og:image" content="image.png">
+    <meta property="og:url" content="https://TrueShot.cc">
+    <title>Sneyx.pct</title>
+</head>
+<body>
+    <canvas id="polygonCanvas"></canvas>
+    <div class="topbar">
+        <nav class="navbar">
+            <a href="#" onclick="showSection('home')">Home</a>
+            <a href="#" onclick="showSection('faq')">FAQ</a>
+            <a href="#" onclick="showSection('how-to-install')">How to Install</a>
+            <a href="#" onclick="showSection('contact-us')">Contact Us</a>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="content" id="home">
+            <section>
+                <div class="logo">Sneyx.pct</div>
+                <div class="description">YoloV8 AI AimAssist</div>
+                <a href="https://discord.gg/drDFetsSqa" target="_blank" class="discord-button">Join our Discord</a>
+                <section class="features">
+                    <h2>Key Features</h2>
+                    <div class="feature-list">
+                        <div class="feature">
+                            <img src="ghost.png" alt="Undetectability Icon">
+                            <h3>Undetectability</h3>
+                            <p>Ensure your gameplay remains undetected with our stealth technology.</p>
+                        </div>
+                        <div class="feature">
+                            <img src="speed.png" alt="Speed Icon">
+                            <h3>Fast Performance</h3>
+                            <p>Experience low latency and high-speed performance.</p>
+                        </div>
+                        <div class="feature">
+                            <img src="easy.png" alt="Easy Icon">
+                            <h3>Easy to Use</h3>
+                            <p>Simple setup and user-friendly interface for all skill levels.</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </div>
+        <div class="content" id="faq" style="display:none;">
+            <section>
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <h3>Is Sneyx.pct detectable?</h3>
+                        <p>No, Sneyx.pct uses advanced stealth technology to ensure it remains undetected.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How do I install Sneyx.pct?</h3>
+                        <p>You can purchase it from the discord!</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What games are supported?</h3>
+                        <p>We use YoloV8 so we support any game with a model created for it.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="content" id="how-to-install" style="display:none;">
+            <section>
+                <h2>How to Install</h2>
+                <p>Follow these steps to install Sneyx.pct:</p>
+                <ol>
+                    <li>Navigate to the Sneyx.pct discord and purchase!</li>
+                    <li>Extract the files into an empty folder.</li>
+                    <li>Once extracted, open setup.bat</li>
+                    <li>Once done settingup, open start.bat</li>
+					<li>After all is complete make a config witch is to your liking.</li>
+                </ol>
+            </section>
+        </div>
+        <div class="content" id="contact-us" style="display:none;">
+            <section>
+                <h2>Contact Us</h2>
+                <p>If you have any questions or need support, please reach out to us through one of the following methods:</p>
+                <ul>
+                    <li>Email: <a href="email">example@gmail.com</a></li>
+                    <li>Discord: <a href="https://discord.com/users/1238880581215981679" target="_blank">nxvbu</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <footer>
+    </footer>
+    <script src="main.js"></script>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.content');
+            sections.forEach(section => {
+                section.style.display = section.id === sectionId ? 'block' : 'none';
+            });
+        }
+    </script>
+</body>
+</html>
